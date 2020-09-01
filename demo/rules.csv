@@ -1,0 +1,198 @@
+protector,enabled,name,mode
+auth-ldap,True,Successful LDAP Authentication,n/a
+auth-ldap,True,LDAP Authentication Failed,block_request
+auth-ldap,True,Failed to Build LDAP Query,block_request
+auth-ldap,True,LDAP Server Connection Failed,block_request
+auth-oracle,True,Guest Access,monitoring
+auth-oracle,True,Unauthorized Access,block_request
+auth-oracle,True,Authentication Data Extraction Failed,monitoring
+auth-oracle,True,Successful Authentication,monitoring
+auth-oracle,True,Authentication Failed,monitoring
+csp,True,CSP Violation,monitoring
+http,False,Invalid Form Token,block_request
+http,False,Form Token Expired,block_request
+http,True,Combined Length of Request Line and Headers Exceeded,block_request
+http,True,Request Body Too Long,block_request
+http,True,Too Many Headers,block_request
+http,True,Method Not Allowed,block_request
+http,True,Invalid Content Type,block_request
+http,True,No Host Header,block_request
+icap,True,Malicious File Download Attempt,block_request
+icap,True,Malicious File Upload Attempt,block_request
+icap,True,ICAP Server Error,monitoring
+icap,True,ICAP Server Closed Connection,monitoring
+icap,True,ICAP Response Timeout Exceeded,monitoring
+wafjs,True,Automated Bot Detected,monitoring
+wafjs,True,Client Acts Like Bot,monitoring
+wafjs,True,DOM XSS Attack,monitoring
+http,True,Slowloris,block_request
+ddos,True,DDoS Attack Started,monitoring
+ddos,True,DDoS Attack in Progress,monitoring
+ddos,True,DDoS Attack Predicted,monitoring
+ddos,True,User Behavior Changed,monitoring
+ddos,True,DDoS Attack Stopped,monitoring
+ddos,True,DDoS Attacker Detected,monitoring
+ddos,True,Possible DDoS Attacker Detected,monitoring
+wafjs,True,Suspicious Mouse Activity,monitoring
+wafjs,True,Client Didn't Render Page,monitoring
+ip,True,Anonymous IP Address Blocked,block_request
+ip,True,VPN IP Address Blocked,block_request
+ip,True,TOR IP Address Blocked,block_request
+ip,True,Custom IP Address Blocked,block_request
+ip,True,Host Blocked,block_request
+ip,True,Referrer Blocked,block_request
+ip,True,Origin Blocked,block_request
+hmm,True,Suspicious Parameter,block_request
+hmm,True,Abnormal Parameter,block_request
+hmm,True,Highly Unusual Parameter,block_request
+http,True,No Content-Type HTTP Header in POST Request,block_request
+http,True,Host Header Contains IP,block_request
+http,True,Invalid Cookie Token,block_request
+http,False,No Form Token,block_request
+http,True,Invalid Header Name,block_request
+csrf,True,Invalid Referrer,block_request
+csrf,True,No CSRF Token,block_request
+session,True,Session Expired,n/a
+session,True,New Session Created,n/a
+session,True,IP Address Changed,monitoring
+session,True,User Agent Changed,block_request
+session,True,Suspicious Session,block_request
+session,True,Invalid Cookie Format,block_request
+session,True,Invalid HMAC,block_request
+openredirect,True,Open Redirect via Meta Refresh,block_request
+sqlinjection,True,SQL Injection Detected,block_request
+xml,True,External Entities in XML,block_request
+xml,True,External DTD in XML,block_request
+xml,True,External Entities Reference in XML,block_request
+xml,True,XML Bomb,block_request
+xml,False,Malformed XML,block_request
+json,False,Malformed JSON,block_request
+xml,True,XSD Validation Error,block_request
+xml,True,WSDL Validation Error,block_request
+xss,True,XSS Attack in Request (HTML Context),block_request
+xss,True,XSS Vulnerability in Response (HTML Context),block_request
+rule-engine,True,Java getRuntime() Invocation Attempt,block_request
+rule-engine,True,PHP Curly Braces Code Evaluation,block_request
+rule-engine,True,PHP-CGI RCE (CVE-2012-1823),block_request
+rule-engine,True,GHOST libc RCE (CVE-2015-0235),block_request
+rule-engine,True,"Struts2 ""Classloader Manipulation"" RCE (CVE-2014-0094)",block_request
+rule-engine,True,HTTP Response Splitting,block_request
+rule-engine,True,Public SSRF Detection Servers,block_request
+rule-engine,True,XSS Attack (URL Context),block_request
+rule-engine,True,YAML Object Injection,block_request
+rule-engine,True,Path Traversal,block_request
+rule-engine,True,Server-Side Request Forgery,block_request
+rule-engine,True,Reflected File Download,block_request
+rule-engine,True,SSI Injection,block_request
+rule-engine,True,Server-Side Template Injection,block_request
+rule-engine,True,XPath Injection,block_request
+rule-engine,True,LDAP Search Filter Injection,block_request
+rule-engine,True,PHP Object Injection,block_request
+rule-engine,True,Memcache Injection,block_request
+rule-engine,True,"Struts2 ""Double OGNL Evaluation"" RCE (CVE-2013-2251)",block_request
+rule-engine,True,Acunetix Scanner,block_request
+rule-engine,True,LDAP DN Injection,block_request
+rule-engine,True,OS Command Injection,block_request
+rule-engine,True,"Struts2 ""XWork ParametersInterceptor"" RCE (CVE-2011-3923)",block_request
+rule-engine,True,CSS Injection,block_request
+rule-engine,True,Shellshock Remote Command Execution (CVE-2014-6271),block_request
+rule-engine,True,ImageTragick (CVE-2016-3714),block_request
+rule-engine,True,WSO Web Shell,block_request
+rule-engine,True,C99 Web Shell,block_request
+rule-engine,True,R57 Web Shell,block_request
+rule-engine,True,PAS Web Shell,block_request
+rule-engine,True,China Chopper Web Shell,block_request
+rule-engine,True,"Struts2 ""Dynamic Method Invocation"" RCE (CVE-2016-3081)",block_request
+rule-engine,True,HTTPoxy HTTP_PROXY Value Spoofing (https://httpoxy.org/),block_request
+http,True,Malformed Request Line,block_request
+http,True,Slow Body,block_request
+rule-engine,True,Attempt to Access Version Control System,block_request
+rule-engine,True,Remote Command Execution (RCE) in PHPMailer,block_request
+rule-engine,True,SMTP Injection,block_request
+rule-engine,True,w3af Scanner,block_request
+rule-engine,True,DirBuster Scanner,block_request
+rule-engine,True,Netsparker Scanner,block_request
+rule-engine,True,SQLMap Scanner,block_request
+rule-engine,True,IIS 6.0 RCE (CVE-2017-7269),block_request
+openredirect,True,Open Redirect via Refresh Header,block_request
+rule-engine,True,Java Object Injection,block_request
+rule-engine,True,"Apache Struts2 RCE (CVE-2017-5638, CVE-2017-9791)",block_request
+rule-engine,True,Magento Arbitrary File Upload,block_request
+rule-engine,True,Weak Password,monitoring
+rule-engine,True,NoSQL Injection Detected,block_request
+rule-engine,True,Expression Language Injection,block_request
+response-filter,False,SQL Error Leakage,block_request
+response-filter,True,PHP Error Leakage,block_request
+response-filter,True,Java Error Leakage,block_request
+response-filter,True,IIS Error Leakage,block_request
+response-filter,True,Data Leakage,block_request
+rule-engine,True,PHP shell Upload Attempt,block_request
+http,True,Invalid Request Character Encoding,block_request
+rule-engine,True,Struts 2 RCE via REST plugin with XStream (CVE-2017-9805),block_request
+rule-engine,True,Apache Struts2 Dynamic Method Invocation (CVE-2013-4316),monitoring
+rule-engine,True,Optionsbleed Bug in Apache httpd (CVE-2017-9798),block_request
+rule-engine,True,Apache Solr (<= 7.0.1) - RCE RunExecutableListener,block_request
+rule-engine,True,Apache Solr (<= 7.0.1) - XML External Entity,block_request
+rule-engine,True,Apache Tomcat (7.0.0 - 7.0.79) - RCE via JSP Upload (CVE-2017-12615),block_request
+rule-engine,True,XSLT Server-Side Injection,block_request
+http,True,Invalid AJAX Token,block_request
+http,True,No AJAX Token,block_request
+rule-engine,True,Good Bot Visited Protected Page,monitoring
+rule-engine,True,Bad Bot Visited Protected Page,block_request
+rule-engine,True,Neutral Bot Visited Protected Page,monitoring
+rule-engine,True,Unknown Bot Visited Protected Page,block_request
+http,True,Unknown HTTP Version,block_request
+rule-engine,True,"Magento Leakeage of Configuration File ""local.xml""",block_request
+rvp,True,RVP: SQL Injection,block_request
+rvp,True,RVP: OS Command Injection,block_request
+rvp,True,RVP: Remote Code Execution,block_request
+rvp,True,RVP: Arbitrary File Reading,block_request
+rvp,True,RVP: Arbitrary File Deletion,block_request
+rvp,True,RVP: Arbitrary File Modification,block_request
+rvp,True,RVP: Arbitrary File Creation,block_request
+rvp,True,RVP: Local File Inclusion,block_request
+rvp,True,RVP: Remote File Inclusion,block_request
+rvp,True,RVP: Unrestricted File Upload,block_request
+rvp,True,RVP: XPath Injection,block_request
+rvp,True,RVP: XQuery Injection,block_request
+rvp,True,RVP: LDAP Injection,block_request
+rvp,True,RVP: DLL Injection,block_request
+rvp,True,RVP: Resource Injection,block_request
+rvp,True,RVP: Cookie Injection,block_request
+rvp,True,RVP: Cross-Site Scripting,block_request
+rvp,True,RVP: HTTP Response Splitting,block_request
+rvp,True,RVP: HTTP Request Splitting,block_request
+rvp,True,RVP: Open Redirect,block_request
+rvp,True,RVP: Log Forging,block_request
+rvp,True,RVP: Server-Side Request Forgery,block_request
+rvp,True,RVP: LINQ Injection,block_request
+rule-engine,True,Cisco ACS < 5.8.0.32.9 Remote Code Execution (CVE-2018-0147),block_request
+rule-engine,True,Missing Security Header,monitoring
+rule-engine,True,Vulnerable crossdomain.xml,monitoring
+rule-engine,True,"""TRACE"" HTTP method is allowed",monitoring
+rule-engine,True,HTTP Response Missing Content-Type Header,monitoring
+rule-engine,True,Insecure Basic Authentication,monitoring
+rule-engine,True,Form submission over HTTP from HTTPS web page,monitoring
+rule-engine,True,Cross-Origin Resource Sharing: Arbitrary Origins Trusted,monitoring
+rule-engine,True,Multiple Content Security Policy Headers,monitoring
+rule-engine,True,Unsafe Content Security Policy Directives,monitoring
+rule-engine,True,Frameable Response,monitoring
+rule-engine,False,Wrong HPKP usage,monitoring
+rule-engine,True,Session fixation,monitoring
+rule-engine,True,Local File Inclusion,block_request
+rule-engine,True,DAws Web Shell,block_request
+rule-engine,True,Sensitive Information Leakage in HTTP Response Headers,monitoring
+rule-engine,True,PHP-FPM Remote Command Execution (CVE-2019-11043),block_request
+rule-engine,True,Missing HTTPS Strict Transport Security,monitoring
+rule-engine,True,_Amount,block_request
+response-filter,True,SQL Error Leakage (1),block_request
+rule-engine,True,Allow ony Russia,monitoring
+rule-engine,True,_catch_pass,sanitize
+rule-engine,False,_catch_header,sanitize
+rule-engine,False,Deny all world,block_request
+rule-engine,False,_ig_test,block_request
+csrf,True,Invalid CSRF Token,block_request
+csrf,True,CSRF Token Expired,block_request
+rule-engine,True,OS Command Injection (id Command),block_request
+openredirect,True,Open Redirect via Location Header,block_request
+http,False,No Cookie Token,block_request

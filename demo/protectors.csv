@@ -1,0 +1,21 @@
+enabled,nickname,name
+True,http,HTTP Protector
+True,hmm,HMM Protector
+True,csrf,CSRF Protector
+True,ddos,DDoS Protector
+True,sqlinjection,SQL Injection Protector
+True,xss,XSS Protector
+True,openredirect,Open Redirect Protector
+True,xml,XML Protector
+True,icap,ICAP Protector
+True,rule-engine,Rule Engine
+False,csp,CSP Protector
+True,response-filter,Response Filter
+True,wafjs,WafJS
+True,auth-oracle,ACL Protector
+False,auth-ldap,LDAP Protector
+True,ip,Blacklist Protector
+True,session,Session Tracking
+True,json,JSON Protector
+False,rvp,RVP Protector
+True,script-engine,Script Engine

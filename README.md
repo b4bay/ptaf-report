@@ -50,6 +50,15 @@ Report template should be created using [python-docx-template](https://docxtpl.r
     ``` 
 ## Usage
 1. Activate virtual environment
+
+    On macOS and Linux:
+    ```
+    source env/bin/activate
+    ```
+    On Windows:
+    ```
+    .\env\Scripts\activate
+    ```
 2. Copy data files produced by [ptaf-export](https://github.com/b4bay/ptaf-export) tool into project folder.
 3. Copy template file to project folder.
 4. Run `run.py`
@@ -83,3 +92,15 @@ Report template should be created using [python-docx-template](https://docxtpl.r
     ```
     deactivate
     ```
+
+## Demo
+1. Copy data files (`.csv`) and report template (`report.docx`) from `demo` folder to project folder:
+2. Activate virtual environment
+3. Run `run.py` with no parameters
+    ```
+    (venv) ubuntu@ubuntu:~/ptaf-report$ python3.8 ./run.py 
+    [~] Starting to build report based on template.docx
+    [+] Report saved to report.docx
+    (venv) ubuntu@ubuntu:~/ptaf-report$ 
+    ```
+4. Open generated report from report.docx
