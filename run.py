@@ -298,37 +298,37 @@ def parse_cli_args(test_data=""):
                         dest='TEMPLATE_FILE',
                         default=DEFAULT_TEMPLATE_FILE,
                         required=False,
-                        help='template file name, {} by default')
+                        help='template file name, {} by default'.format(DEFAULT_TEMPLATE_FILE))
     parser.add_argument('-o', '--output',
                         action='store',
                         dest='REPORT_FILE',
                         default=DEFAULT_REPORT_FILE,
                         required=False,
-                        help='report file name, {} by default')
+                        help='report file name, {} by default'.format(DEFAULT_REPORT_FILE))
     parser.add_argument('-m', '--meta',
                         action='store',
                         dest='META_FILE',
                         default=DEFAULT_META_FILE,
                         required=False,
-                        help='meta file name, {} by default')
+                        help='meta file name, {} by default'.format(DEFAULT_META_FILE))
     parser.add_argument('-r', '--rules',
                         action='store',
                         dest='RULES_FILE',
                         default=DEFAULT_RULES_FILE,
                         required=False,
-                        help='rules file name, {} by default')
+                        help='rules file name, {} by default'.format(DEFAULT_RULES_FILE))
     parser.add_argument('-p', '--protectors',
                         action='store',
                         dest='PROTECTORS_FILE',
                         default=DEFAULT_PROTECTORS_FILE,
                         required=False,
-                        help='protectors file name, {} by default')
+                        help='protectors file name, {} by default'.format(DEFAULT_PROTECTORS_FILE))
     parser.add_argument('-e', '--events',
                         action='store',
                         dest='EVENTS_FILE',
                         default=DEFAULT_EVENTS_FILE,
                         required=False,
-                        help='events file name, {} by default')
+                        help='events file name, {} by default'.format(DEFAULT_EVENTS_FILE))
     parser.add_argument('--ua-csv-file',
                         action='store',
                         dest='UA_CSV',
