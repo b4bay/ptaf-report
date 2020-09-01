@@ -5,7 +5,6 @@ Report template should be created using [python-docx-template](https://docxtpl.r
 ## Prerequisites
 + `python`
 + `pip`
-
     ```
     python3 -m pip install --user --upgrade pip
     ``` 
