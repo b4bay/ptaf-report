@@ -58,12 +58,12 @@ Report template should be created using [python-docx-template](https://docxtpl.r
     ```
     .\env\Scripts\activate
     ```
-2. Copy data files produced by [ptaf-export](https://github.com/b4bay/ptaf-export) tool into project folder.
-3. Copy template file to project folder.
+2. Copy data files produced by [ptaf-export](https://github.com/b4bay/ptaf-export) tool to the project folder.
+3. Copy template file to the project folder.
 4. Run `run.py`
 
     ```
-    (venv) ubuntu@ubuntu:~/ptaf-report$ python ./run.py -h
+    (venv) ubuntu@ubuntu:~/ptaf-report$ python3 ./run.py -h
     usage: run.py [-h] [-t TEMPLATE_FILE] [-o REPORT_FILE] [-m META_FILE] [-r RULES_FILE] [-p PROTECTORS_FILE]
                   [-e EVENTS_FILE] [--ua-csv-file UA_CSV]
     
@@ -97,7 +97,7 @@ Report template should be created using [python-docx-template](https://docxtpl.r
 2. Activate virtual environment
 3. Run `run.py` with no parameters
     ```
-    (venv) ubuntu@ubuntu:~/ptaf-report$ python3.8 ./run.py 
+    (venv) ubuntu@ubuntu:~/ptaf-report$ python3 ./run.py 
     [~] Starting to build report based on template.docx
     [+] Report saved to report.docx
     (venv) ubuntu@ubuntu:~/ptaf-report$ 

@@ -1,6 +1,7 @@
 from docxtpl import DocxTemplate, InlineImage
 from docx.shared import Mm
 import csv
+import re
 import argparse
 from datetime import datetime
 import pytz
@@ -41,9 +42,13 @@ class Dataset:
             return res
 
         def meta_wrapper(o):
+            def replace_last(source_string, replace_what, replace_with):
+                head, _sep, tail = source_string.rpartition(replace_what)
+                return head + replace_with + tail
+
             res = o
-            res['start_date'] = datetime.strptime(o['start_date'], '%Y-%m-%d %H:%M:%S%z')
-            res['end_date'] = datetime.strptime(o['end_date'], '%Y-%m-%d %H:%M:%S%z')
+            res['start_date'] = datetime.strptime(replace_last(o['start_date'], ":00", "00"), '%Y-%m-%d %H:%M:%S%z')
+            res['end_date'] = datetime.strptime(replace_last(o['end_date'], ":00", "00"), '%Y-%m-%d %H:%M:%S%z')
             res['range'] = int(o['range'])
             return res
 
