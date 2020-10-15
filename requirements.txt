@@ -5,5 +5,5 @@ psutil~=5.7.2
 kaleido~=0.0.3.post1
 numpy~=1.19.1
 pandas~=1.1.1
-docxtpl~=0.10.0
+docxtpl==0.10.0
 python-dateutil~=2.8.1
