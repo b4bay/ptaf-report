@@ -57,7 +57,7 @@ Report template should be created using [python-docx-template](https://docxtpl.r
     ```
     .\env\Scripts\activate
     ```
-2. Copy data files produced by [ptaf-export](https://github.com/b4bay/ptaf-export) tool to the project folder.
+2. Copy data files produced by [ptaf-export](https://github.com/b4bay/ptaf-export) to the project folder.
 3. Copy template file to the project folder.
 4. Run `run.py`
 
