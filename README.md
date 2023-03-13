@@ -1,4 +1,4 @@
-# Reporting tool for PT AF
+# Reporting tool for PTAF
 This tools is designed to use with data produced by [ptaf-export](https://github.com/b4bay/ptaf-export) tool.
 Report template should be created using [python-docx-template](https://docxtpl.readthedocs.io/en/latest/) syntax.
 
